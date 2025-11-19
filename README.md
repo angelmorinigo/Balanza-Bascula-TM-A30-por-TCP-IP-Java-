@@ -37,10 +37,10 @@ La estructura general es:
 ```!0V0017A4525925000500000..............B066097110097110097000C000D000E```
 ## 3.1. Comando y PLU
 
--```!0V```
+- ```!0V```
 Comando de programación de PLU (es lo que envía el software oficial).
 
--```0017```
+- ```0017```
 Número de PLU (4 dígitos, con ceros a la izquierda).
 Valores típicos: ```0001–9999```.
 
