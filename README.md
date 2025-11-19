@@ -23,7 +23,7 @@ OutputStream out = socket.getOutputStream();
 String trama = "..."; // trama completa
 out.write((trama + "\r\n").getBytes());
 out.flush();
-socket.close();
+socket.close();```
 
 ## 2. Ejemplo de trama completa de PLU
 
