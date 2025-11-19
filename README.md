@@ -23,10 +23,25 @@ OutputStream out = socket.getOutputStream();
 String trama = "..."; // trama completa
 out.write((trama + "\r\n").getBytes());
 out.flush();
-socket.close();```
+socket.close();
+```
 
 ## 2. Ejemplo de trama completa de PLU
 
 Ejemplo real de trama capturada para el PLU 17, precio 5.000 (ejemplo) y nombre Banana:
-!0V0017A4525925000500000000000000000000000000000000000000000000000000000000000000B066097110097110097000C000D000E
+```!0V0017A4525925000500000000000000000000000000000000000000000000000000000000000000B066097110097110097000C000D000E```
+La estructura general es:
+```!0V[PLU4][Axxxxxxx][PRECIO5][RELLENO]B[ASCII_NOMBRE]000C000D000E```
+
+## 3. Desglose campo por campo
+```!0V0017A4525925000500000..............B066097110097110097000C000D000E```
+## 3.1. Comando y PLU
+
+```!0V```
+Comando de programación de PLU (es lo que envía el software oficial).
+
+```0017```
+Número de PLU (4 dígitos, con ceros a la izquierda).
+Valores típicos: ```0001–9999```.
+
 
