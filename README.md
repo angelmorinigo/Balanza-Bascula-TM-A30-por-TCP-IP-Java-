@@ -24,3 +24,9 @@ String trama = "..."; // trama completa
 out.write((trama + "\r\n").getBytes());
 out.flush();
 socket.close();
+
+## 2. Ejemplo de trama completa de PLU
+
+Ejemplo real de trama capturada para el PLU 17, precio 5.000 (ejemplo) y nombre Banana:
+!0V0017A4525925000500000000000000000000000000000000000000000000000000000000000000B066097110097110097000C000D000E
+
