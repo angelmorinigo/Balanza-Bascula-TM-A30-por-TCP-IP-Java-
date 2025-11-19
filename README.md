@@ -44,4 +44,23 @@ Comando de programación de PLU (es lo que envía el software oficial).
 Número de PLU (4 dígitos, con ceros a la izquierda).
 Valores típicos: ```0001–9999```.
 
+## 3.2. Bloque A4525925 (configuración interna)
+
+```A4525925```
+Bloque de configuración interna de la balanza:
+
+- A → tipo de registro / encabezado
+
+- ```4525925``` → parámetros internos (tipo de PLU, flags, etc.)
+
+ Este bloque no se tocó ni modificó.(Aún)
+Se recomienda copiarlo de la trama base original de ese PLU y dejarlo igual.
+
+## 3.3. Campo de precio (5 dígitos)
+
+En la trama:
+
+```!0V0017A4525925 00050 0000000000...```
+
+
 
