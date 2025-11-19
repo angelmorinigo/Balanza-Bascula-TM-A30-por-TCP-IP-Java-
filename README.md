@@ -60,7 +60,7 @@ Se recomienda copiarlo de la trama base original de ese PLU y dejarlo igual.
 
 En la trama:
 
-```!0V0017A4525925 00050 0000000000...```
+```!0V0017A4525925 00050 0000000000...``` (00050)
 
 
 
